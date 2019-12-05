@@ -300,12 +300,12 @@ public class SingularityClient {
 
   private SingularityClientException fail(String type, HttpResponse response) {
     String body = "";
-
-    try {
+    System.out.println("Testing aws code guru");
+    
       body = response.getAsString();
-    } catch (Exception e) {
+     
       LOG.warn("Unable to read body", e);
-    }
+    
 
     String uri = "";
 
